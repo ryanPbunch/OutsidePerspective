@@ -1,0 +1,85 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+}
+
+/* Carousel styles */
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* Overlay for text readability */
+header .container {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    justify-content: space-between;
+}
+
+header .carousel-inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity for better text readability */
+    z-index: 1;
+}
+
+/* Services section styles */
+.card {
+    margin: 15px;
+}
+
+/* Accessibility features */
+.btn:focus,
+.card:focus {
+    outline: 3px solid #000;
+    outline-offset: 2px;
+}
+
+.carousel-control-next {display:none;}
+.carousel-control-prev {display:none;}
+
+/* Add a subtle shadow to the section*/
+.contact {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } */
+  
+/* Add a subtle gradient to the background */
+.contact {
+background: linear-gradient(to bottom, #f0f0f0, #fff);
+}
+
+/* Add a subtle hover effect to the navigation items */
+.contact a {
+transition: transform 0.2s ease-in-out;
+}
+
+.contact a:hover {
+transform: translateY(-2px);
+}
