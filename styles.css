@@ -85,4 +85,7 @@ transform: translateY(-2px);
 }
 
 .logo{
+  width: 100%; /* Set width as a percentage of the parent container */
+  height: auto; /* Keeps the aspect ratio */
+  max-width: 500px;
 }
